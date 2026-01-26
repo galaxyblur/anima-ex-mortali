@@ -1,13 +1,13 @@
 <template>
-  <div class="min-h-screen bg-stone-50 text-stone-900">
+  <div class="min-h-screen bg-void text-primary font-body">
     <NuxtRouteAnnouncer />
-    <header class="border-b border-stone-200 bg-white">
+    <header class="border-b border-border-subtle bg-surface">
       <nav class="mx-auto max-w-3xl px-4 py-4 flex items-center justify-between">
-        <NuxtLink to="/" class="font-serif text-lg">Anima Ex Mortali</NuxtLink>
+        <NuxtLink to="/" class="font-heading text-lg text-primary">Anima Ex Mortali</NuxtLink>
         <div class="flex gap-6 text-sm">
-          <NuxtLink to="/artifacts" class="hover:text-stone-600">Artifacts</NuxtLink>
-          <NuxtLink to="/threads" class="hover:text-stone-600">Threads</NuxtLink>
-          <NuxtLink to="/changelog" class="hover:text-stone-600">What's New</NuxtLink>
+          <NuxtLink to="/artifacts" class="text-secondary hover:text-primary transition-colors duration-300">Artifacts</NuxtLink>
+          <NuxtLink to="/threads" class="text-secondary hover:text-primary transition-colors duration-300">Threads</NuxtLink>
+          <NuxtLink to="/changelog" class="text-secondary hover:text-primary transition-colors duration-300">What's New</NuxtLink>
         </div>
       </nav>
     </header>

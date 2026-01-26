@@ -5,7 +5,7 @@ const { data: artifact } = await useAsyncData(`artifact-${route.params.slug}`, (
   return queryCollection('artifacts').path(`/artifacts/${route.params.slug}`).first()
 })
 
-const { data: threads } = await useAsyncData('threads', () => {
+const { data: threads } = await useAsyncData(`artifact-${route.params.slug}-threads`, () => {
   return queryCollection('threads').all()
 })
 
@@ -20,9 +20,9 @@ const artifactThreads = computed(() => {
 <template>
   <article v-if="artifact">
     <header class="mb-8">
-      <h1 class="font-serif text-3xl mb-2">{{ artifact.title }}</h1>
-      <p class="text-stone-600 mb-4">{{ artifact.description }}</p>
-      <div class="flex flex-wrap gap-4 text-sm text-stone-500">
+      <h1 class="font-heading text-3xl mb-2">{{ artifact.title }}</h1>
+      <p class="text-secondary mb-4">{{ artifact.description }}</p>
+      <div class="flex flex-wrap gap-4 text-sm text-tertiary">
         <span class="capitalize">{{ artifact.medium }}</span>
         <span>{{ artifact.status }}</span>
         <span v-if="artifact.date_created">Created {{ artifact.date_created }}</span>
@@ -36,28 +36,28 @@ const artifactThreads = computed(() => {
         :href="link.url"
         target="_blank"
         rel="noopener"
-        class="inline-flex items-center gap-1 px-4 py-2 border border-stone-300 hover:border-stone-400 text-sm"
+        class="inline-flex items-center gap-1 px-4 py-2 border border-border-default hover:border-verdigris text-sm transition-colors duration-300"
       >
         {{ link.label }}
-        <span class="text-stone-400">&nearr;</span>
+        <span class="text-tertiary">&nearr;</span>
       </a>
     </div>
 
     <div v-if="artifactThreads.length" class="mb-8">
-      <h2 class="text-sm text-stone-500 mb-2">Threads</h2>
+      <h2 class="text-sm text-tertiary mb-2">Threads</h2>
       <div class="flex flex-wrap gap-2">
         <NuxtLink
           v-for="thread in artifactThreads"
           :key="thread.path"
           :to="thread.path"
-          class="px-3 py-1 bg-stone-100 hover:bg-stone-200 text-sm"
+          class="px-3 py-1 bg-hover hover:bg-verdigris-dim text-sm transition-colors duration-300"
         >
           {{ thread.title }}
         </NuxtLink>
       </div>
     </div>
 
-    <div class="prose prose-stone">
+    <div class="prose">
       <ContentRenderer :value="artifact" />
     </div>
   </article>

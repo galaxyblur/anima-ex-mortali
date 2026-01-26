@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const { data: threads } = await useAsyncData('threads', () => {
+const { data: threads } = await useAsyncData('threads-index', () => {
   return queryCollection('threads').all()
 })
 
-const { data: artifacts } = await useAsyncData('artifacts', () => {
+const { data: artifacts } = await useAsyncData('threads-index-artifacts', () => {
   return queryCollection('artifacts').all()
 })
 
@@ -20,26 +20,26 @@ const threadsWithCount = computed(() => {
 
 <template>
   <div>
-    <h1 class="font-serif text-3xl mb-6">Threads</h1>
-    <p class="text-stone-600 mb-8">Lines of inquiry connecting the work.</p>
+    <h1 class="font-heading text-3xl mb-6">Threads</h1>
+    <p class="text-secondary mb-8">Lines of inquiry connecting the work.</p>
 
     <div class="space-y-4">
       <NuxtLink
         v-for="thread in threadsWithCount"
         :key="thread.path"
         :to="thread.path"
-        class="block p-6 bg-white border border-stone-200 hover:border-stone-400 transition-colors"
+        class="block p-6 bg-elevated border border-border-subtle hover:border-border-default transition-colors duration-300"
       >
-        <h2 class="font-serif text-xl mb-1">{{ thread.title }}</h2>
-        <p v-if="thread.description" class="text-stone-600 text-sm mb-2">
+        <h2 class="font-heading text-xl mb-1">{{ thread.title }}</h2>
+        <p v-if="thread.description" class="text-secondary text-sm mb-2">
           {{ thread.description }}
         </p>
-        <span class="text-xs text-stone-500">
+        <span class="text-xs text-tertiary">
           {{ thread.artifactCount }} artifact{{ thread.artifactCount !== 1 ? 's' : '' }}
         </span>
       </NuxtLink>
 
-      <p v-if="!threadsWithCount.length" class="text-stone-500 italic">
+      <p v-if="!threadsWithCount.length" class="text-tertiary italic">
         No threads yet.
       </p>
     </div>
