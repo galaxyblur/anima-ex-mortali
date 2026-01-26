@@ -1,0 +1,49 @@
+# =============================================================================
+# USER STORIES: Secondary (Future)
+# =============================================================================
+# @spec_version: 1.0.0
+# @priority: SECONDARY
+# @systems: [CONTENT_SYSTEM]
+# @last_updated: 2025-01-26
+
+# -----------------------------------------------------------------------------
+# Search
+# -----------------------------------------------------------------------------
+
+- id: US-020
+  title: Search artifacts
+  acceptance_criteria:
+    - id: AC-020-1
+      title: Search returns matching artifacts
+      narrative: |
+        Given I am a visitor looking for specific content
+        When I enter a search term
+        Then I see artifacts with matching titles or descriptions
+
+# -----------------------------------------------------------------------------
+# Contact
+# -----------------------------------------------------------------------------
+
+- id: US-021
+  title: Contact form
+  acceptance_criteria:
+    - id: AC-021-1
+      title: Visitor can send a message
+      narrative: |
+        Given I am a visitor who wants to reach the creator
+        When I fill out and submit the contact form
+        Then the message is sent to the creator
+
+# -----------------------------------------------------------------------------
+# Newsletter
+# -----------------------------------------------------------------------------
+
+- id: US-022
+  title: Email newsletter subscription
+  acceptance_criteria:
+    - id: AC-022-1
+      title: Visitor can subscribe to updates
+      narrative: |
+        Given I am a visitor who wants to follow the exhibit
+        When I enter my email and subscribe
+        Then I am added to the newsletter list

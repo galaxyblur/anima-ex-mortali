@@ -1,0 +1,85 @@
+# =============================================================================
+# USER STORIES: Visitor - MVP
+# =============================================================================
+# @spec_version: 1.0.0
+# @priority: MVP
+# @systems: [CONTENT_SYSTEM, CHANGELOG_SYSTEM]
+# @last_updated: 2025-01-26
+
+# -----------------------------------------------------------------------------
+# Charter
+# -----------------------------------------------------------------------------
+
+- id: US-010
+  title: View charter
+  acceptance_criteria:
+    - id: AC-010-1
+      title: Visitor can read the charter
+      narrative: |
+        Given I am a visitor on the site
+        When I navigate to the charter page
+        Then I see the mission, values, and creative philosophy
+
+# -----------------------------------------------------------------------------
+# Browsing Artifacts
+# -----------------------------------------------------------------------------
+
+- id: US-011
+  title: Browse all artifacts
+  acceptance_criteria:
+    - id: AC-011-1
+      title: Artifact index shows all public artifacts
+      narrative: |
+        Given there are multiple artifacts in the exhibit
+        When I view the artifacts index page
+        Then I see a list of all artifacts with titles and brief descriptions
+
+- id: US-012
+  title: Filter artifacts by medium
+  acceptance_criteria:
+    - id: AC-012-1
+      title: Medium filter shows only matching artifacts
+      narrative: |
+        Given there are artifacts of different mediums
+        When I filter by a specific medium (e.g., "code")
+        Then I see only artifacts of that medium
+
+- id: US-013
+  title: View single artifact with thread context
+  acceptance_criteria:
+    - id: AC-013-1
+      title: Artifact page shows content and thread links
+      narrative: |
+        Given I am viewing a single artifact
+        When the artifact belongs to one or more threads
+        Then I see links to those threads for further exploration
+
+# -----------------------------------------------------------------------------
+# Browsing Threads
+# -----------------------------------------------------------------------------
+
+- id: US-014
+  title: Browse thread and see linked artifacts
+  acceptance_criteria:
+    - id: AC-014-1
+      title: Thread page shows all related artifacts
+      narrative: |
+        Given I am viewing a thread page
+        When I look at the thread content
+        Then I see all artifacts linked to this thread
+        And I can click through to any artifact
+
+# -----------------------------------------------------------------------------
+# Changelog
+# -----------------------------------------------------------------------------
+
+- id: US-015
+  title: View changelog (what's new)
+  acceptance_criteria:
+    - id: AC-015-1
+      title: What's new page shows all entries
+      narrative: |
+        Given there are changelog entries
+        When I view the what's new page
+        Then I see all entries in reverse chronological order
+        And entries link to related artifacts/threads when applicable

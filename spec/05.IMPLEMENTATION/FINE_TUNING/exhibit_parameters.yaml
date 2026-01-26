@@ -1,0 +1,53 @@
+# =============================================================================
+# LEVEL 5: FINE TUNING - Exhibit Parameters
+# =============================================================================
+# @spec_version: 1.0.0
+# @system: CONTENT_SYSTEM, CHANGELOG_SYSTEM
+# @last_updated: 2025-01-26
+# @status: draft
+
+# -----------------------------------------------------------------------------
+# Changelog Display
+# -----------------------------------------------------------------------------
+
+changelog:
+  display_limit: null
+  # @rationale: Show all entries; no pagination needed for personal exhibit
+  # @spec_source: L5 discovery - "changelog entries: all"
+  # @alternatives: [5, 10, 20]
+  # @note: Can add pagination later if list becomes unwieldy
+
+# -----------------------------------------------------------------------------
+# Artifact Display
+# -----------------------------------------------------------------------------
+
+artifacts:
+  description_preview_length: 200
+  # @rationale: Enough to convey essence without overwhelming browse view
+  # @constraints: min=50, max=500, type=integer
+  # @unit: characters
+
+  items_per_page: null
+  # @rationale: Show all; small collection doesn't need pagination initially
+  # @alternatives: [12, 24, 48]
+
+# -----------------------------------------------------------------------------
+# Thread Display
+# -----------------------------------------------------------------------------
+
+threads:
+  show_artifact_count: true
+  # @rationale: Helps visitors gauge thread depth before clicking
+
+  show_description: true
+  # @rationale: When present, description provides context
+  # @note: Description is optional per L4 spec
+
+# -----------------------------------------------------------------------------
+# External Links
+# -----------------------------------------------------------------------------
+
+external_links:
+  open_in_new_tab: true
+  # @rationale: Preserve exhibit context when visitor clicks external link
+  # @spec_source: Standard web UX practice

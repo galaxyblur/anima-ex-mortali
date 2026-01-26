@@ -1,0 +1,109 @@
+# =============================================================================
+# USER STORIES: Creator - MVP
+# =============================================================================
+# @spec_version: 1.0.0
+# @priority: MVP
+# @systems: [CONTENT_SYSTEM, CHANGELOG_SYSTEM]
+# @last_updated: 2025-01-26
+
+# -----------------------------------------------------------------------------
+# Charter
+# -----------------------------------------------------------------------------
+
+- id: US-001
+  title: Add charter page
+  acceptance_criteria:
+    - id: AC-001-1
+      title: Charter displays mission and values
+      narrative: |
+        Given I have written the charter content
+        When I view the charter page
+        Then I see the mission, design pillars, and values displayed
+
+# -----------------------------------------------------------------------------
+# Artifacts by Medium
+# -----------------------------------------------------------------------------
+
+- id: US-002
+  title: Add code/app artifact with external link
+  acceptance_criteria:
+    - id: AC-002-1
+      title: Code artifact renders with link
+      narrative: |
+        Given I have created an artifact with medium "code"
+        And I have added an external link (product URL or repository)
+        When I view the artifact page
+        Then I see the title, description, and clickable external link
+
+- id: US-003
+  title: Add prose artifact with embedded content
+  acceptance_criteria:
+    - id: AC-003-1
+      title: Prose artifact renders with full content
+      narrative: |
+        Given I have created an artifact with medium "prose"
+        And I have written the content in markdown
+        When I view the artifact page
+        Then I see the full prose content rendered
+
+- id: US-004
+  title: Add poetry artifact
+  acceptance_criteria:
+    - id: AC-004-1
+      title: Poetry artifact renders with preserved formatting
+      narrative: |
+        Given I have created an artifact with medium "poetry"
+        And I have written the poem with line breaks
+        When I view the artifact page
+        Then I see the poem with formatting preserved
+
+- id: US-005
+  title: Add music artifact with streaming link
+  acceptance_criteria:
+    - id: AC-005-1
+      title: Music artifact renders with streaming link
+      narrative: |
+        Given I have created an artifact with medium "music"
+        And I have added a streaming link (Bandcamp, Spotify, etc.)
+        When I view the artifact page
+        Then I see the title, description, and clickable streaming link
+
+# -----------------------------------------------------------------------------
+# Threads
+# -----------------------------------------------------------------------------
+
+- id: US-006
+  title: Link artifact to thread
+  acceptance_criteria:
+    - id: AC-006-1
+      title: Artifact shows thread membership
+      narrative: |
+        Given I have created an artifact
+        And I have added a thread ID to its frontmatter
+        When I view the artifact page
+        Then I see the thread listed with a link to the thread page
+
+- id: US-007
+  title: Create new thread
+  acceptance_criteria:
+    - id: AC-007-1
+      title: Thread page lists linked artifacts
+      narrative: |
+        Given I have created a thread with a title
+        And at least one artifact references this thread
+        When I view the thread page
+        Then I see the thread title and all linked artifacts
+
+# -----------------------------------------------------------------------------
+# Changelog
+# -----------------------------------------------------------------------------
+
+- id: US-008
+  title: Write changelog entry
+  acceptance_criteria:
+    - id: AC-008-1
+      title: Changelog entry appears in what's new
+      narrative: |
+        Given I have written a changelog entry with date and description
+        When I view the what's new page
+        Then I see my entry with date and description displayed
