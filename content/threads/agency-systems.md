@@ -1,8 +1,4 @@
 ---
 title: Agency & Systems
-description: Exploring the interplay between individual agency and systemic forces
+description: Exploring individual agency within systemic forces
 ---
-
-# Agency & Systems
-
-A thread exploring how individuals navigate, resist, and shape the systems they inhabit.
