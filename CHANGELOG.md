@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Commit hook enforcing CHANGELOG updates (husky)
 - Release automation script (`./scripts/release.sh`)
 - User-facing What's New page format
+- Artifact: SpriteStory — AI pixel art story generator
+
+### Removed
+- Placeholder example artifact
 
 ## [0.1.0] - 2026-01-26
 
