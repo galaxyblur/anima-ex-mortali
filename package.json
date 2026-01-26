@@ -1,5 +1,6 @@
 {
   "name": "anima-ex-mortali",
+  "version": "0.1.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -10,7 +11,8 @@
     "dev:status": "./scripts/dev.sh status",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "husky"
   },
   "dependencies": {
     "@nuxt/content": "^3.11.0",
@@ -18,5 +20,8 @@
     "nuxt": "^4.3.0",
     "vue": "^3.5.27",
     "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
   }
 }

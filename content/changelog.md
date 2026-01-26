@@ -2,8 +2,11 @@
 title: What's New
 ---
 
-## 2025
+# What's New
 
-### January
+User-facing updates to Anima Ex Mortali.
 
-- **2025-01-26** — Launched the exhibit with initial structure. *(artifact_added)*
+## Version 0.1 — January 26, 2026
+
+- **Dark archival design** — New visual identity with warm off-white text on deep dark backgrounds, inspired by aged manuscripts and archival materials
+- **Exhibit launched** — Initial structure with Charter, Artifacts, and Threads
