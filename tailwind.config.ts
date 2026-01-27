@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import typography from '@tailwindcss/typography'
 
 export default {
   content: [
@@ -68,9 +69,15 @@ export default {
             '--tw-prose-pre-bg': '#18181c',
             '--tw-prose-th-borders': '#333338',
             '--tw-prose-td-borders': '#252528',
+            fontFamily: 'Source Serif 4, Georgia, serif',
+            h1: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
+            h2: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
+            h3: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
+            h4: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
           },
         },
       },
     },
   },
+  plugins: [typography],
 } satisfies Config

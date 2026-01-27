@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Artifact: The Exhibit Model — framework for working in public through thematic exhibits
 
 ### Changed
+- Prose content now has proper heading styles via Tailwind Typography plugin
 - Dev script only kills processes from this project, not other projects on same port
 
 ### Removed
