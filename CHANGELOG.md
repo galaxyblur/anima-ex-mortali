@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - User-facing What's New page format
 - Artifact: SpriteStory — AI pixel art story generator
 - Artifact: The Capoeira Language — writing system for capoeira movements
+- Artifact: Words 365 — daily word for creative inspiration
 
 ### Removed
 - Placeholder example artifact
