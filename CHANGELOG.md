@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Release automation script (`./scripts/release.sh`)
 - User-facing What's New page format
 - Artifact: SpriteStory — AI pixel art story generator
+- Artifact: The Capoeira Language — writing system for capoeira movements
 
 ### Removed
 - Placeholder example artifact

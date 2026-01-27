@@ -10,3 +10,4 @@ User-facing updates to Anima Ex Mortali.
 
 - **Dark archival design** — New visual identity with warm off-white text on deep dark backgrounds, inspired by aged manuscripts and archival materials
 - **Exhibit launched** — Initial structure with Charter, Artifacts, and Threads
+- **Added [The Capoeira Language](/artifacts/capoeira-language)** — A writing system for capoeira movements
