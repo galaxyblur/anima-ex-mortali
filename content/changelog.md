@@ -18,3 +18,7 @@ User-facing updates to Anima Ex Mortali.
 - **Added [Capoeira Letras](/artifacts/capoeira-letras)** — A searchable collection of capoeira song lyrics
 - **Added [Rootspec](/artifacts/rootspec)** — A hierarchical specification framework for software projects
 - **Added [Daybreaker](/artifacts/daybreaker)** — A time management app using game design and behavior science
+- **Added [The Superstar, Monte Christo: Fifth Dimension Fireworks](/artifacts/fifth-dimension-fireworks)** — Early instrumental album as Phase Fate
+- **Added [Thoro Savant, the Savior: Sand Slave](/artifacts/sand-slave)** — Hip-hop/electronic/rock concept album as Phase Fate
+- **Added [Good Mourning, America](/artifacts/good-mourning-america)** — Hip-hop/electronic/rock EP as Phase Fate
+- **Added [Waiting On My Clone to Come](/artifacts/waiting-on-my-clone)** — Single as Phase Fate

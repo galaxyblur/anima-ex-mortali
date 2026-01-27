@@ -19,6 +19,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Artifact: Capoeira Letras — searchable collection of capoeira song lyrics
 - Artifact: Rootspec — hierarchical specification framework for software projects
 - Artifact: Daybreaker — time management app using game design and behavior science
+- Artifact: Fifth Dimension Fireworks — early instrumental album as Phase Fate
+- Artifact: Sand Slave — hip-hop/electronic/rock concept album as Phase Fate
+- Artifact: Good Mourning, America — hip-hop/electronic/rock EP as Phase Fate
+- Artifact: Waiting On My Clone to Come — single as Phase Fate
 
 ### Removed
 - Placeholder example artifact
