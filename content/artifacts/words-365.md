@@ -3,6 +3,8 @@ title: Words 365
 description: A different English word each day for creative inspiration
 medium: code
 status: complete
+threads:
+  - inspiration
 date_created: "2022-07-01"
 date_added: "2026-01-26"
 external_links:

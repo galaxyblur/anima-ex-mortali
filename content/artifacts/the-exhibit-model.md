@@ -3,6 +3,8 @@ title: The Exhibit Model
 description: A framework for working in public through thematic creative exhibits
 medium: prose
 status: complete
+threads:
+  - frameworks-systems
 date_created: "2026-01-26"
 date_added: "2026-01-26"
 ---

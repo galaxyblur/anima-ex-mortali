@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Prose content now has proper heading styles via Tailwind Typography plugin
+- Reorganized threads: Human Communication & Connection, Capoeira, Dissent & Complicity, Frameworks & Systems, Play, Inspiration
 - Dev script only kills processes from this project, not other projects on same port
 
 ### Removed

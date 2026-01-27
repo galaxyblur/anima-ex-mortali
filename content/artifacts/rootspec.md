@@ -3,6 +3,8 @@ title: Rootspec
 description: A hierarchical specification framework for software projects
 medium: code
 status: in-progress
+threads:
+  - frameworks-systems
 date_created: "2025-11-01"
 date_added: "2026-01-26"
 external_links:

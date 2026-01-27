@@ -3,6 +3,9 @@ title: Capoeira Letras
 description: A searchable collection of capoeira song lyrics
 medium: code
 status: complete
+threads:
+  - human-communication-connection
+  - capoeira
 date_created: "2019-05-01"
 date_added: "2026-01-26"
 external_links:

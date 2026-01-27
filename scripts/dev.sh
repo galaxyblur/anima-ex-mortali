@@ -2,38 +2,61 @@
 # Dev server management for Anima Ex Mortali
 
 PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+PROJECT_NAME="anima-ex-mortali"
 PID_FILE="$PROJECT_DIR/.nuxt/dev.pid"
 LOG_FILE="$PROJECT_DIR/.nuxt/dev.log"
-PORT=3000
+PORT_FILE="$PROJECT_DIR/.nuxt/dev.port"
 
-kill_port() {
-  local port=$1
-  local pids=$(lsof -ti:$port 2>/dev/null)
-  for pid in $pids; do
-    # Only kill if process was started from this project directory
-    local cwd=$(lsof -a -p $pid -d cwd -Fn 2>/dev/null | grep '^n' | cut -c2-)
-    if [ "$cwd" = "$PROJECT_DIR" ]; then
-      kill -9 $pid 2>/dev/null
-      echo "Killed process $pid (from this project)"
-    else
-      echo "Skipping process $pid (from $cwd)"
+# Check if a port is used by this project
+is_our_process() {
+  local pid=$1
+  local cwd=$(lsof -a -p $pid -d cwd -Fn 2>/dev/null | grep '^n' | cut -c2-)
+  [[ "$cwd" == *"$PROJECT_NAME"* ]]
+}
+
+# Kill all processes from this project on any port
+kill_our_processes() {
+  local killed=false
+  for port in $(seq 3000 3010); do
+    local pids=$(lsof -ti:$port 2>/dev/null)
+    for pid in $pids; do
+      if is_our_process $pid; then
+        kill -9 $pid 2>/dev/null
+        echo "Killed process $pid on port $port"
+        killed=true
+      fi
+    done
+  done
+  $killed && sleep 0.5
+}
+
+# Find first available port starting from 3000
+find_available_port() {
+  for port in $(seq 3000 3010); do
+    local pids=$(lsof -ti:$port 2>/dev/null)
+    if [ -z "$pids" ]; then
+      echo $port
+      return
     fi
   done
-  sleep 0.5
+  echo "No available port found" >&2
+  exit 1
 }
 
 start() {
   # Check if already running via PID file
   if [ -f "$PID_FILE" ] && kill -0 "$(cat "$PID_FILE")" 2>/dev/null; then
-    echo "Dev server already running (PID: $(cat "$PID_FILE"))"
+    local port=$(cat "$PORT_FILE" 2>/dev/null || echo "unknown")
+    echo "Dev server already running (PID: $(cat "$PID_FILE"), port: $port)"
     exit 1
   fi
 
-  # Kill anything on our port (handles orphaned processes)
-  if lsof -ti:$PORT >/dev/null 2>&1; then
-    echo "Port $PORT in use - checking for processes from this project..."
-    kill_port $PORT
-  fi
+  # Kill any existing processes from this project
+  kill_our_processes
+
+  # Find first available port
+  local PORT=$(find_available_port)
+  echo "Using port $PORT"
 
   # Ensure .nuxt directory exists
   mkdir -p "$PROJECT_DIR/.nuxt"
@@ -43,17 +66,19 @@ start() {
   nohup npx nuxt dev --port $PORT > "$LOG_FILE" 2>&1 &
   PID=$!
   echo $PID > "$PID_FILE"
+  echo $PORT > "$PORT_FILE"
 
   # Wait briefly and check if process survived startup
   sleep 0.5
   if ! kill -0 "$PID" 2>/dev/null; then
     echo "Dev server failed to start. Log output:"
     cat "$LOG_FILE"
-    rm -f "$PID_FILE"
+    rm -f "$PID_FILE" "$PORT_FILE"
     exit 1
   fi
 
   echo "Dev server started (PID: $PID)"
+  echo "URL: http://localhost:$PORT"
   echo "Logs: $LOG_FILE"
 }
 
@@ -64,20 +89,15 @@ stop() {
   if [ -f "$PID_FILE" ]; then
     PID=$(cat "$PID_FILE")
     if kill -0 "$PID" 2>/dev/null; then
-      # Kill process group to get all children
       kill -- -"$PID" 2>/dev/null || kill "$PID" 2>/dev/null
       stopped=true
       echo "Dev server stopped (PID: $PID)"
     fi
-    rm -f "$PID_FILE"
+    rm -f "$PID_FILE" "$PORT_FILE"
   fi
 
-  # Also kill anything still on the port (catches orphans)
-  if lsof -ti:$PORT >/dev/null 2>&1; then
-    kill_port $PORT
-    stopped=true
-    echo "Cleaned up processes on port $PORT"
-  fi
+  # Also kill any orphaned processes from this project
+  kill_our_processes && stopped=true
 
   if [ "$stopped" = false ]; then
     echo "Dev server was not running"
@@ -86,10 +106,11 @@ stop() {
 
 status() {
   if [ -f "$PID_FILE" ] && kill -0 "$(cat "$PID_FILE")" 2>/dev/null; then
-    echo "running (PID: $(cat "$PID_FILE"))"
+    local port=$(cat "$PORT_FILE" 2>/dev/null || echo "unknown")
+    echo "running (PID: $(cat "$PID_FILE"), port: $port)"
     exit 0
   else
-    [ -f "$PID_FILE" ] && rm "$PID_FILE"  # Clean stale PID
+    [ -f "$PID_FILE" ] && rm -f "$PID_FILE" "$PORT_FILE"
     echo "stopped"
     exit 1
   fi

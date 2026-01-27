@@ -3,6 +3,9 @@ title: The Capoeira Language
 description: A writing system for representing capoeira movements
 medium: prose
 status: in-progress
+threads:
+  - human-communication-connection
+  - capoeira
 date_created: "2015-10-01"
 date_added: "2026-01-26"
 external_links:

@@ -4,7 +4,8 @@ description: AI-generated pixel art stories for the people you love
 medium: code
 status: in-progress
 threads:
-  - play-learning
+  - human-communication-connection
+  - play
 date_created: "2024-12-01"
 date_added: "2026-01-26"
 external_links:

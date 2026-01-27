@@ -10,8 +10,9 @@ const { data: artifacts } = await useAsyncData('threads-index-artifacts', () => 
 const threadsWithCount = computed(() => {
   if (!threads.value || !artifacts.value) return []
   return threads.value.map((thread: any) => {
+    const threadSlug = thread.path?.split('/').pop()
     const count = artifacts.value?.filter((a: any) =>
-      a.threads?.includes(thread.stem)
+      a.threads?.includes(threadSlug)
     ).length ?? 0
     return { ...thread, artifactCount: count }
   })

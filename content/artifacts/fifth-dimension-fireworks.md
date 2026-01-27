@@ -3,6 +3,8 @@ title: "The Superstar, Monte Christo: Fifth Dimension Fireworks"
 description: Early, mostly instrumental work released as Phase Fate
 medium: music
 status: complete
+threads:
+  - dissent-complicity
 date_created: "2003-01-01"
 date_added: "2026-01-26"
 ---
