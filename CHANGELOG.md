@@ -7,31 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-01-27
+
 ### Added
-- Commit hook enforcing CHANGELOG updates (husky)
-- Release automation script (`./scripts/release.sh`)
-- User-facing What's New page format
-- Artifact: SpriteStory — AI pixel art story generator
-- Artifact: The Capoeira Language — writing system for capoeira movements
-- Artifact: Words 365 — daily word for creative inspiration
-- Artifact: December 2nd, 2015 — retro point-and-click first date game
-- Artifact: Capoeira Songs — word cloud and n-gram analysis of capoeira lyrics
-- Artifact: Capoeira Letras — searchable collection of capoeira song lyrics
-- Artifact: Rootspec — hierarchical specification framework for software projects
-- Artifact: Daybreaker — time management app using game design and behavior science
-- Artifact: Fifth Dimension Fireworks — early instrumental album as Phase Fate
-- Artifact: Sand Slave — hip-hop/electronic/rock concept album as Phase Fate
-- Artifact: Good Mourning, America — hip-hop/electronic/rock EP as Phase Fate
-- Artifact: Waiting On My Clone to Come — single as Phase Fate
-- Artifact: The Exhibit Model — framework for working in public through thematic exhibits
+- 13 artifacts across code, music, and prose
+- 6 threads: Human Communication & Connection, Capoeira, Dissent & Complicity, Frameworks & Systems, Play, Inspiration
+- Tailwind Typography for prose styling
+- Netlify deployment with continuous delivery from GitHub
 
 ### Changed
-- Prose content now has proper heading styles via Tailwind Typography plugin
-- Reorganized threads: Human Communication & Connection, Capoeira, Dissent & Complicity, Frameworks & Systems, Play, Inspiration
-- Dev script only kills processes from this project, not other projects on same port
-
-### Removed
-- Placeholder example artifact
+- Dev script finds first available port, cleans up orphaned processes
 
 ## [0.1.0] - 2026-01-26
 
@@ -52,5 +37,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Migrated from light (stone-*) to dark semantic color tokens
 
-[Unreleased]: https://github.com/USER/anima-ex-mortali/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/USER/anima-ex-mortali/releases/tag/v0.1.0
+[Unreleased]: https://github.com/galaxyblur/anima-ex-mortali/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/galaxyblur/anima-ex-mortali/compare/v0.1.0...v1.0.0
+[0.1.0]: https://github.com/galaxyblur/anima-ex-mortali/releases/tag/v0.1.0
