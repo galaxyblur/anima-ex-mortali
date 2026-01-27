@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Artifact: Capoeira Songs — word cloud and n-gram analysis of capoeira lyrics
 - Artifact: Capoeira Letras — searchable collection of capoeira song lyrics
 - Artifact: Rootspec — hierarchical specification framework for software projects
+- Artifact: Daybreaker — time management app using game design and behavior science
 
 ### Removed
 - Placeholder example artifact

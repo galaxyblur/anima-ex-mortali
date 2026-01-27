@@ -17,3 +17,4 @@ User-facing updates to Anima Ex Mortali.
 - **Added [Capoeira Songs](/artifacts/capoeira-songs)** — Word cloud and n-gram analysis of capoeira lyrics
 - **Added [Capoeira Letras](/artifacts/capoeira-letras)** — A searchable collection of capoeira song lyrics
 - **Added [Rootspec](/artifacts/rootspec)** — A hierarchical specification framework for software projects
+- **Added [Daybreaker](/artifacts/daybreaker)** — A time management app using game design and behavior science
