@@ -1,75 +1,31 @@
-# Nuxt Minimal Starter
+# Anima Ex Mortali
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A living archive of creative work unified by mortal angst—the existential anxiety that motivates human action.
 
-## Setup
+## What This Is
 
-Make sure to install dependencies:
+An exhibit, not a portfolio. Work at any stage of completion: finished albums, working prototypes, abandoned experiments, half-formed ideas. Organized by threads of inquiry rather than chronology or medium.
+
+## Threads
+
+- **Human Communication & Connection** — how we reach each other
+- **Capoeira** — the Afro-Brazilian art form
+- **Dissent & Complicity** — living with and in spite of political realities
+- **Frameworks & Systems** — meta-tools for organizing creative chaos
+- **Play** — interactive experiences and game mechanics
+- **Inspiration** — seeds and sparks
+
+## Tech
+
+Built with [Nuxt](https://nuxt.com) and [Nuxt Content](https://content.nuxt.com). Styled with [Tailwind CSS](https://tailwindcss.com).
+
+## Development
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## License
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+All rights reserved. This code is viewable for reference but may not be copied, forked, or used as a template for other projects. The artifacts documented here are personal creative work.
