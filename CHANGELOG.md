@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Artifact: December 2nd, 2015 — retro point-and-click first date game
 - Artifact: Capoeira Songs — word cloud and n-gram analysis of capoeira lyrics
 - Artifact: Capoeira Letras — searchable collection of capoeira song lyrics
+- Artifact: Rootspec — hierarchical specification framework for software projects
 
 ### Removed
 - Placeholder example artifact
