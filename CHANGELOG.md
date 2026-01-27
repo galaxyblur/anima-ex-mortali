@@ -24,6 +24,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Artifact: Good Mourning, America — hip-hop/electronic/rock EP as Phase Fate
 - Artifact: Waiting On My Clone to Come — single as Phase Fate
 
+### Changed
+- Dev script only kills processes from this project, not other projects on same port
+
 ### Removed
 - Placeholder example artifact
 

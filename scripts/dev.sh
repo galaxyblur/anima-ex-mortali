@@ -9,10 +9,17 @@ PORT=3000
 kill_port() {
   local port=$1
   local pids=$(lsof -ti:$port 2>/dev/null)
-  if [ -n "$pids" ]; then
-    echo "$pids" | xargs kill -9 2>/dev/null
-    sleep 0.5
-  fi
+  for pid in $pids; do
+    # Only kill if process was started from this project directory
+    local cwd=$(lsof -a -p $pid -d cwd -Fn 2>/dev/null | grep '^n' | cut -c2-)
+    if [ "$cwd" = "$PROJECT_DIR" ]; then
+      kill -9 $pid 2>/dev/null
+      echo "Killed process $pid (from this project)"
+    else
+      echo "Skipping process $pid (from $cwd)"
+    fi
+  done
+  sleep 0.5
 }
 
 start() {
@@ -24,7 +31,7 @@ start() {
 
   # Kill anything on our port (handles orphaned processes)
   if lsof -ti:$PORT >/dev/null 2>&1; then
-    echo "Port $PORT in use - killing existing processes..."
+    echo "Port $PORT in use - checking for processes from this project..."
     kill_port $PORT
   fi
 
