@@ -15,3 +15,4 @@ User-facing updates to Anima Ex Mortali.
 - **Added [Words 365](/artifacts/words-365)** — A different English word each day for creative inspiration
 - **Added [December 2nd, 2015](/artifacts/dec2nd2015)** — A retro point-and-click game depicting our first date
 - **Added [Capoeira Songs](/artifacts/capoeira-songs)** — Word cloud and n-gram analysis of capoeira lyrics
+- **Added [Capoeira Letras](/artifacts/capoeira-letras)** — A searchable collection of capoeira song lyrics
