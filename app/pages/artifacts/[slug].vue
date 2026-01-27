@@ -12,7 +12,7 @@ const { data: threads } = await useAsyncData(`artifact-${route.params.slug}-thre
 const artifactThreads = computed(() => {
   if (!artifact.value?.threads || !threads.value) return []
   return threads.value.filter((t: any) =>
-    artifact.value.threads.includes(t.stem)
+    artifact.value?.threads?.includes(t.stem)
   )
 })
 </script>
