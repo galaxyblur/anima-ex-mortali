@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Artifact: SpriteStory — AI pixel art story generator
 - Artifact: The Capoeira Language — writing system for capoeira movements
 - Artifact: Words 365 — daily word for creative inspiration
+- Artifact: December 2nd, 2015 — retro point-and-click first date game
 
 ### Removed
 - Placeholder example artifact
