@@ -6,6 +6,18 @@ title: What's New
 
 User-facing updates to Anima Ex Mortali.
 
+## Version 1.1 — January 27, 2026
+
+- **New artifacts** — Added 5 creative works: Baba Sandeater short story and 4 poems (A Clearing, A Heart Unseated, Summer Wind, The Love Narcotic)
+- **Transience thread** — New conceptual thread exploring impermanence, fleeting beauty, and moments that pass
+- **Release documentation** — Added RELEASING.md with semver workflow
+
+## Version 1.0 — January 27, 2026
+
+- **13 artifacts launched** — Initial collection across code, music, and prose including SpriteStory, The Capoeira Language, Rootspec, music albums, and more
+- **6 thematic threads** — Human Communication & Connection, Capoeira, Dissent & Complicity, Frameworks & Systems, Play, Inspiration
+- **Netlify deployment** — Continuous delivery from GitHub with optimized build process
+
 ## Version 0.1 — January 26, 2026
 
 - **Dark archival design** — New visual identity with warm off-white text on deep dark backgrounds, inspired by aged manuscripts and archival materials
