@@ -18,3 +18,11 @@ Before implementing, read the spec files in order:
 6. `spec/TECH.md` Tech stack, database schema, AI prompts, deployment
 
 When asked to make changes, use a spec-driven development approach, where the spec must be updated before the implementation changes.
+
+## Releases
+
+Semver versioning. Update `CHANGELOG.md` under `[Unreleased]` as you work.
+
+To release: `./scripts/release.sh [major|minor|patch]`
+
+See `RELEASING.md` for full workflow.
