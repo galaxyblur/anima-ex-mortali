@@ -6,7 +6,7 @@ title: What's New
 
 User-facing updates to Anima Ex Mortali.
 
-## Version X.Y — Month Day, Year
+## Version 1.1.1 — January 27, 2026
 
 - **Favicon** — Added verdigris spiral icon visible in browser tabs and bookmarks
 
