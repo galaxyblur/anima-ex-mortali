@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-01-27
+
 ### Added
 - 5 new artifacts: Baba Sandeater (prose), A Clearing, A Heart Unseated, Summer Wind, The Love Narcotic (poetry)
 - Transience thread connecting poems about impermanence and fleeting moments
