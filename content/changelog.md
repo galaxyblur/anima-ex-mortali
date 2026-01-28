@@ -6,6 +6,10 @@ title: What's New
 
 User-facing updates to Anima Ex Mortali.
 
+## Version X.Y — Month Day, Year
+
+- **Favicon** — Added verdigris spiral icon visible in browser tabs and bookmarks
+
 ## Version 1.1 — January 27, 2026
 
 - **New artifacts** — Added 5 creative works: Baba Sandeater short story and 4 poems (A Clearing, A Heart Unseated, Summer Wind, The Love Narcotic)
