@@ -74,6 +74,7 @@ export default {
             h2: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
             h3: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
             h4: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
+            p: { whiteSpace: 'pre-line' },
           },
         },
       },
