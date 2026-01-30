@@ -6,6 +6,10 @@ title: What's New
 
 User-facing updates to Anima Ex Mortali.
 
+## Version 1.1.2 — January 29, 2026
+
+- **Poetry formatting** — Fixed line breaks in poems now display correctly instead of running together
+
 ## Version 1.1.1 — January 27, 2026
 
 - **Favicon** — Added verdigris spiral icon visible in browser tabs and bookmarks
