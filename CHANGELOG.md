@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- ABCD artifact: chaos theory-inspired AI development methodology demonstrating multi-agent convergent development
+
 ## [1.1.2] - 2026-01-29
 
 ### Fixed
