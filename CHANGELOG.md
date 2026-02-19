@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - ABCD artifact: chaos theory-inspired AI development methodology demonstrating multi-agent convergent development
+- The Litany of Edvar artifact: prose draft of a story about a low-tech society whose sacred monument is ancient infrastructure still broadcasting to a dead civilization
 
 ## [1.1.2] - 2026-01-29
 
