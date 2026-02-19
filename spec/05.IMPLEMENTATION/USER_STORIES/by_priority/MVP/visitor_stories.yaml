@@ -7,6 +7,22 @@
 # @last_updated: 2025-01-26
 
 # -----------------------------------------------------------------------------
+# About
+# -----------------------------------------------------------------------------
+
+- id: US-009
+  title: View about page
+  acceptance_criteria:
+    - id: AC-009-1
+      title: Visitor can read creator origin story
+      narrative: |
+        Given I am a visitor on the site
+        When I navigate to /about via the nav link
+        Then I see the creator's name and a first-person story
+        And the page is consistent with the exhibit's reflective voice
+        And no credentials, job titles, or calls to action are present
+
+# -----------------------------------------------------------------------------
 # Charter
 # -----------------------------------------------------------------------------
 

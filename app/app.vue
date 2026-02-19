@@ -8,6 +8,7 @@
           <NuxtLink to="/artifacts" class="text-secondary hover:text-primary transition-colors duration-300">Artifacts</NuxtLink>
           <NuxtLink to="/threads" class="text-secondary hover:text-primary transition-colors duration-300">Threads</NuxtLink>
           <NuxtLink to="/changelog" class="text-secondary hover:text-primary transition-colors duration-300">What's New</NuxtLink>
+          <NuxtLink to="/about" class="text-secondary hover:text-primary transition-colors duration-300">About</NuxtLink>
         </div>
       </nav>
     </header>
