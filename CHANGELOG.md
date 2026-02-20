@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Ripples artifact: abstract prose meditation on being immersed in forces we didn't choose, and the disturbances we create
 - ABCD artifact: chaos theory-inspired AI development methodology demonstrating multi-agent convergent development
 - The Litany of Edvar artifact: prose draft of a story about a low-tech society whose sacred monument is ancient infrastructure still broadcasting to a dead civilization
 - About page: first-person origin story accessible from nav, giving the exhibit a human face
