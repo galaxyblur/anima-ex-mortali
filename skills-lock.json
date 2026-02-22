@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "commit": {
+      "source": "rootspec/skills",
+      "sourceType": "github",
+      "computedHash": "5ab1909b8a1a148e114acd580c6f32bbaf88ae1bcef3d1608b8050508d017551"
+    },
+    "dev": {
+      "source": "rootspec/skills",
+      "sourceType": "github",
+      "computedHash": "26f2ae4f5be8486577530cee5586a21411cc36c92ee8a5b56f3de0688497c40c"
+    },
+    "issues": {
+      "source": "rootspec/skills",
+      "sourceType": "github",
+      "computedHash": "e0a5eb16b15ef40be7cc623d0d9483a307a2fffe9f206e1c431a20b637b5589e"
+    },
+    "release": {
+      "source": "rootspec/skills",
+      "sourceType": "github",
+      "computedHash": "f649f4b385a6ddf0658edc1ff6cfdc7774145f218eb63064e52964ffdeb55953"
+    }
+  }
+}
