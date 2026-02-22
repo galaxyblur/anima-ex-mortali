@@ -35,6 +35,4 @@ When asked to make changes, use a spec-driven development approach, where the sp
 
 Semver versioning. Update `CHANGELOG.md` under `[Unreleased]` as you work.
 
-To release: `./scripts/release.sh [major|minor|patch]`
-
-See `RELEASING.md` for full workflow.
+To release: `/release [major|minor|patch]`

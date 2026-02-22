@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - rootspec/skills installed for Claude Code: commit, dev, issues, release
+- Local scripts replaced by rootspec/skills (dev, release, commit hook)
 - AI Is a Generator, Not an Oracle artifact: prose essay reframing AI reliability as a verification problem, not a probability problem
 - Ripples artifact: abstract prose meditation on being immersed in forces we didn't choose, and the disturbances we create
 - The Commander artifact: poem about the internal war between love and hate, and which one commands

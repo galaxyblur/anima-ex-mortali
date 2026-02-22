@@ -10,37 +10,15 @@ This project uses [Semantic Versioning](https://semver.org/):
 
 ## Workflow
 
-### 1. Update Changelogs
+Use the `/release` skill:
 
-Before releasing, update both changelog files:
-
-**CHANGELOG.md** (technical, under `[Unreleased]`):
-```markdown
-## [Unreleased]
-### Added
-- New feature description
-
-### Fixed
-- Bug fix description
+```
+/release minor   # New feature
+/release patch   # Bug fix
+/release major   # Breaking change
 ```
 
-**content/changelog.md** (user-facing):
-Add a new version section at the top with user-friendly descriptions of visible changes. Only include changes users would notice.
-```markdown
-## Version X.Y — Month Day, Year
-
-- **Feature name** — Brief user-friendly description
-```
-
-### 2. Run Release Script
-
-```bash
-./scripts/release.sh minor   # New feature
-./scripts/release.sh patch   # Bug fix
-./scripts/release.sh major   # Breaking change
-```
-
-The script:
+The skill guides through updating changelogs and runs `npm run release`, which:
 1. Verifies you're on `main` with no uncommitted changes
 2. Bumps version in `package.json`
 3. Moves `[Unreleased]` to new version with today's date
@@ -48,33 +26,10 @@ The script:
 5. Pushes to origin
 6. Creates GitHub release with changelog notes
 
-### 3. Manual Release (if needed)
+## Changelogs
 
-```bash
-# Bump version
-npm version minor --no-git-tag-version
+Update both before releasing:
 
-# Edit CHANGELOG.md manually
+**`CHANGELOG.md`** — technical changelog, under `[Unreleased]`
 
-# Commit and tag
-git add package.json CHANGELOG.md
-git commit -m "v0.x.0"
-git tag -a "v0.x.0" -m "Release v0.x.0"
-
-# Push
-git push && git push --tags
-
-# Create GitHub release
-gh release create "v0.x.0" --title "v0.x.0" --notes "Release notes here"
-```
-
-## Changelog Format
-
-Follow [Keep a Changelog](https://keepachangelog.com/):
-
-- **Added**: New features
-- **Changed**: Changes to existing functionality
-- **Deprecated**: Soon-to-be removed features
-- **Removed**: Removed features
-- **Fixed**: Bug fixes
-- **Security**: Vulnerability fixes
+**`content/changelog.md`** — user-facing, visible in the app

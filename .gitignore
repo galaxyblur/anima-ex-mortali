@@ -13,6 +13,9 @@ node_modules
 logs
 *.log
 
+# Dev server
+.dev
+
 # Misc
 .DS_Store
 .fleet
